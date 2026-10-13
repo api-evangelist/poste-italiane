@@ -1,23 +1,86 @@
 aid: poste-italiane
+
 name: Poste Italiane
-description: 'Poste Italiane is a company surfaced via the API Evangelist harvest backlog (source: market-gap:shipping-logistics)
-  and added to the network as a stub for full-pipeline profiling.'
+
+description: 'Poste Italiane (Gruppo Poste Italiane S.p.A.) is Italy''s national postal operator and largest integrated
+  omnichannel services platform, active in logistics, mail and parcels, financial services (BancoPosta), insurance
+  (Poste Vita, Poste Assicura), payments and telecommunications. Its parcel carrier API for Poste Delivery Business
+  (Delivery Express) is available only to contracted business customers via the MyPDB portal; no public developer
+  documentation or machine-readable contract is published. Surfaced via the API Evangelist harvest backlog
+  (market-gap:shipping-logistics).'
+
 url: https://raw.githubusercontent.com/api-evangelist/poste-italiane/refs/heads/main/apis.yml
+
+image: https://www.media.poste.it/f2968aa3-8485-4882-a834-86c8555185ae/lg/webp/conceptbfoto-soggettolg-buonopremium_reveal@2x
+
 x-type: company
+
 x-source: harvest:market-gap:shipping-logistics
+
 x-tier: stub
+
 x-tier-reason: harvest
+
 specificationVersion: '0.20'
+
 created: '2026-10-13'
+
 modified: '2026-10-13'
+
 tags:
 - Company
-apis: []
+- Shipping
+- Logistics
+- Postal Services
+- Parcels
+- Italy
+- Financial Services
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: LLMsTxt
+  url: llms/poste-italiane-llms.txt
+- type: SecurityTxt
+  url: well-known/poste-italiane-aiutaciamigliorarecfm-security.txt
+- type: WellKnown
+  url: well-known/poste-italiane-well-known.yml
+- type: Hosts
+  url: hosts/poste-italiane-hosts.yml
+- type: Vendors
+  url: vendors/poste-italiane-vendors.yml
+- type: DomainSecurity
+  url: security/poste-italiane-domain-security.yml
 - type: Website
   url: https://www.poste.it
+- type: Support
+  url: https://www.poste.it/assistenza
+- type: PrivacyPolicy
+  url: https://www.poste.it/privacy-policy
+- type: Login
+  url: https://www.mypostedeliverybusiness.it/offertaunica/
+
+apis: []
+
+x-coverage:
+  state: gated
+  reason: customer-only-docs
+  detail: The Poste Delivery Business (Delivery Express) parcel API and its credentials are issued only to contracted business customers through the MyPDB portal at mypostedeliverybusiness.it; poste.it publishes an llms.txt but no developer portal, API reference or OpenAPI contract (api.poste.it and developer.poste.it do not resolve).
+  evidence:
+  - url: https://www.mypostedeliverybusiness.it/offertaunica/
+    status: 200
+  - url: https://www.poste.it/llms.txt
+    status: 200
+  - url: https://business.poste.it/business/it/api.html
+    status: 404
+  checked: '2026-10-13'
+
+x-enrichment:
+  date: '2026-10-13'
+  status: minimal
+  artifacts_added: 5
+  pass: local-v5

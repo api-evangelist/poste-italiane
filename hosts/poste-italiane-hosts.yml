@@ -1,0 +1,164 @@
+generated: '2026-10-13'
+method: derived
+source: the pre-flight dossier, apis.yml pointers, spec servers, well-known, vendors -- nothing fetched here
+generator: derive-hosts.py
+summary:
+  hosts: 15
+  own: 14
+  other_domain: 1
+  platform: 0
+  roles:
+  - api
+  - identity
+  - other
+  - website
+hosts:
+- host: aiutaciamigliorarecfm.poste.it
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: api.poste.it
+  found_by:
+  - contract-discovery
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: api
+  relation: own
+- host: bancoposta.poste.it
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: bancopostafondi.poste.it
+  found_by:
+  - probed
+  - site-links
+  - contract-discovery
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: buonielibretti.poste.it
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: business.poste.it
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: checkup-assicurativo.posteassicura.poste.it
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: e-francobolli.poste.it
+  found_by:
+  - probed
+  - site-links
+  - well-known
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: filatelia.poste.it
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: pagamenti.poste.it
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: posteassicura.poste.it
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: postedeliveryweb-retail.poste.it
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: posteinsurancebroker.poste.it
+  found_by:
+  - probed
+  - site-links
+  types: []
+  serves: []
+  registrable_domain: poste.it
+  role: other
+  relation: own
+- host: www.mypostedeliverybusiness.it
+  found_by:
+  - pointer
+  types:
+  - Login
+  serves: []
+  registrable_domain: mypostedeliverybusiness.it
+  role: identity
+  relation: other-domain
+- host: www.poste.it
+  found_by:
+  - pointer
+  - probed
+  - contract-discovery
+  - well-known
+  types:
+  - Website
+  - Support
+  - PrivacyPolicy
+  serves: []
+  registrable_domain: poste.it
+  role: website
+  relation: own
