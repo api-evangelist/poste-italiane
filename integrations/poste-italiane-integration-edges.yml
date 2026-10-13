@@ -1,0 +1,16 @@
+generated: '2026-10-13'
+method: none
+source:
+- https://zapier.com/apps/poste-italiane/integrations
+- https://n8n.io/integrations/poste-italiane/
+- https://composio.dev/toolkits/poste-italiane
+- https://monid.ai/tools/poste-italiane
+checked:
+- https://composio.dev/toolkits/poste-italiane
+- https://monid.ai/tools/poste-italiane
+- https://n8n.io/integrations/poste-italiane/
+- https://zapier.com/apps/poste-italiane/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
