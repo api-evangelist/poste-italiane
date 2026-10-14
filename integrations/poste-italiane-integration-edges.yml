@@ -5,8 +5,11 @@ source:
 - https://n8n.io/integrations/poste-italiane/
 - https://composio.dev/toolkits/poste-italiane
 - https://monid.ai/tools/poste-italiane
+- https://eidas.agid.gov.it/TL/TSL-IT.xml
 checked:
 - https://composio.dev/toolkits/poste-italiane
+- https://ec.europa.eu/tools/lotl/eu-lotl.xml
+- https://eidas.agid.gov.it/TL/TSL-IT.xml
 - https://monid.ai/tools/poste-italiane
 - https://n8n.io/integrations/poste-italiane/
 - https://zapier.com/apps/poste-italiane/integrations
@@ -24,4 +27,31 @@ edges:
   detected_by: detect-carrier-edges.py
   first_seen: '2026-10-13'
   matched_by: domain:poste.it
+- partner_name: EU Trusted List (eIDAS)
+  partner: null
+  partner_match: register
+  type: contract
+  channel: regulator-register
+  relationship: standard-participant
+  direction: partner-built
+  evidence: https://eidas.agid.gov.it/TL/TSL-IT.xml
+  contract_reference:
+    register: EU List of Trusted Lists (eIDAS qualified trust service providers)
+    spec_file: null
+    role: qualified-trust-service-provider
+    registered_name: Poste Italiane S.p.A.
+    member_state: IT
+    trusted_list: https://eidas.agid.gov.it/TL/TSL-IT.xml
+    services:
+    - QES-certificates
+    - QSeal-certificates
+    - qualified-remote-signing-device
+    - qualified-timestamp
+    lotl: https://ec.europa.eu/tools/lotl/eu-lotl.xml
+    matched_domain: poste.it
+    detected_by: sweep-legal.py
+    detected: '2026-10-14'
+  source: eutl
+  detected_by: sweep-legal.py
+  first_seen: '2026-10-14'
 templates: []

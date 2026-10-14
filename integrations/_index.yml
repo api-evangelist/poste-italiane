@@ -14,3 +14,29 @@
   relationship: carrier-coverage
   status: not-a-workflow
   arazzo: null
+- slug: poste-italiane-eu-trusted-list-eidas
+  label: EU Trusted List (eIDAS)
+  partner_name: EU Trusted List (eIDAS)
+  type: contract
+  channel: regulator-register
+  evidence: https://eidas.agid.gov.it/TL/TSL-IT.xml
+  source: edge
+  relationship: standard-participant
+  contract_reference:
+    register: EU List of Trusted Lists (eIDAS qualified trust service providers)
+    spec_file: null
+    role: qualified-trust-service-provider
+    registered_name: Poste Italiane S.p.A.
+    member_state: IT
+    trusted_list: https://eidas.agid.gov.it/TL/TSL-IT.xml
+    services:
+    - QES-certificates
+    - QSeal-certificates
+    - qualified-remote-signing-device
+    - qualified-timestamp
+    lotl: https://ec.europa.eu/tools/lotl/eu-lotl.xml
+    matched_domain: poste.it
+    detected_by: sweep-legal.py
+    detected: '2026-10-14'
+  status: not-a-workflow
+  arazzo: null
