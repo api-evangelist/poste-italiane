@@ -6,6 +6,7 @@ source:
 - https://composio.dev/toolkits/poste-italiane
 - https://monid.ai/tools/poste-italiane
 - https://eidas.agid.gov.it/TL/TSL-IT.xml
+- https://eidas.agid.gov.it/TL/TSL-IT.xml
 checked:
 - https://composio.dev/toolkits/poste-italiane
 - https://ec.europa.eu/tools/lotl/eu-lotl.xml
